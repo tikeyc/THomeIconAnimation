@@ -39,7 +39,7 @@
 - (void)initSubView{
     NSArray *iconImgName = @[@"main_home_icon_rent.png",@"main_home_icon_qiuzu.png",@"main_home_icon_business.png",@"main_home_icon_buy.png",@"main_home_icon_sell.png"];
     NSArray *iconSelectedImgNames = @[@"main_home_icon_rent_selected.png",@"main_home_icon_qiuzu_selected.png",@"main_home_icon_business_selected.png",@"main_home_icon_buy_selected.png",@"main_home_icon_sell_selected.png"];
-    NSArray *iconTitles = @[@"商铺出租",@"商铺求租",@"生意转让",@"商铺求购",@"商铺出售"];
+    NSArray *iconTitles = @[@"出租",@"求租",@"转让",@"求购",@"出售"];
     _pathIcons = [NSMutableArray array];
     int count = iconImgName.count + 1;
     for (int i = 0; i < iconImgName.count; i++) {
@@ -47,19 +47,19 @@
         pathIcon.tag = i + 1;
         float offx = [THelper cos:(180/count)*(i + 1)];
         float offy = [THelper sin:(180/count)*(i + 1)];
-        if (i == 0) {//商铺出租
+        if (i == 0) {//
             _pathIcon1 = pathIcon;
-        }else if (i == 1){//商铺求租
+        }else if (i == 1){//
 
 
             _pathIcon2 = pathIcon;
-        }else if (i == 2){//生意转让
+        }else if (i == 2){//
 
             _pathIcon3 = pathIcon;
-        }else if (i == 3){//商铺求购
+        }else if (i == 3){//
 
             _pathIcon4 = pathIcon;
-        }else if (i == 4){//商铺出售
+        }else if (i == 4){//
             _pathIcon5 = pathIcon;
         }
         pathIcon.center = CGPointMake(self.width/2 - radus*offx, radus*offy - radusTop);
