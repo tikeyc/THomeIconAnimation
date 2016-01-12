@@ -2,8 +2,8 @@
 //  ESPathIconView.m
 //  Estate
 //
-//  Created by tikeyc on 14/11/5.
-//  Copyright (c) 2014年 Andy li. All rights reserved.
+//  Created by tikeyc on 16/1/12.
+//  Copyright © 2016年 tikeyc. All rights reserved.
 //
 
 #import "ESPathIcon.h"
@@ -41,7 +41,7 @@
     //
     _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _iconButton.bottom + 6, _iconButton.width, 13)];
     _titleLabel.backgroundColor = [UIColor clearColor];
-    _titleLabel.font = Arial_12;
+    _titleLabel.font = [UIFont systemFontOfSize:12.0f];
     _titleLabel.textColor = RGBColor(51, 51, 51);
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.text = _title;

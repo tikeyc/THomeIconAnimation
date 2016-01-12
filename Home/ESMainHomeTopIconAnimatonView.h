@@ -2,8 +2,8 @@
 //  ESMainHomeTopIconAnimatonView.h
 //  Estate
 //
-//  Created by tikeyc on 14/11/5.
-//  Copyright (c) 2014年 Andy li. All rights reserved.
+//  Created by tikeyc on 16/1/12.
+//  Copyright © 2016年 tikeyc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

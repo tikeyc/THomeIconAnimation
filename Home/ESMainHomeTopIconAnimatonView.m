@@ -2,8 +2,8 @@
 //  ESMainHomeTopIconAnimatonView.m
 //  Estate
 //
-//  Created by tikeyc on 14/11/5.
-//  Copyright (c) 2014年 Andy li. All rights reserved.
+//  Created by tikeyc on 16/1/12.
+//  Copyright © 2016年 tikeyc. All rights reserved.
 //
 
 #import "ESMainHomeTopIconAnimatonView.h"
@@ -43,10 +43,10 @@
     _pathIcons = [NSMutableArray array];
     int count = iconImgName.count + 1;
     for (int i = 0; i < iconImgName.count; i++) {
-        __block ESPathIcon *pathIcon = [[ESPathIcon alloc] initWithNormalImageName:iconImgName[i] withSelectedImageName:iconSelectedImgNames[i]  withLabelTitle:iconTitles[i]];
+        ESPathIcon *pathIcon = [[ESPathIcon alloc] initWithNormalImageName:iconImgName[i] withSelectedImageName:iconSelectedImgNames[i]  withLabelTitle:iconTitles[i]];
         pathIcon.tag = i + 1;
-        float offx = [ESHelper cos:(180/count)*(i + 1)];
-        float offy = [ESHelper sin:(180/count)*(i + 1)];
+        float offx = [THelper cos:(180/count)*(i + 1)];
+        float offy = [THelper sin:(180/count)*(i + 1)];
         if (i == 0) {//商铺出租
             _pathIcon1 = pathIcon;
         }else if (i == 1){//商铺求租
@@ -64,9 +64,10 @@
         }
         pathIcon.center = CGPointMake(self.width/2 - radus*offx, radus*offy - radusTop);
         pathIcon.endPoint = pathIcon.center;
+        __weak typeof(ESPathIcon) *weekPathIcon = pathIcon;
         __weak ESMainHomeTopIconAnimatonView *this = self;
         pathIcon.block = ^(id result){
-            [this iconClickResult:pathIcon];
+            [this iconClickResult:weekPathIcon];
         };
         [self addSubview:pathIcon];
         //
