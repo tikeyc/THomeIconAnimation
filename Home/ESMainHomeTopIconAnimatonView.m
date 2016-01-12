@@ -41,7 +41,7 @@
     NSArray *iconSelectedImgNames = @[@"main_home_icon_rent_selected.png",@"main_home_icon_qiuzu_selected.png",@"main_home_icon_business_selected.png",@"main_home_icon_buy_selected.png",@"main_home_icon_sell_selected.png"];
     NSArray *iconTitles = @[@"出租",@"求租",@"转让",@"求购",@"出售"];
     _pathIcons = [NSMutableArray array];
-    int count = iconImgName.count + 1;
+    NSInteger count = iconImgName.count + 1;
     for (int i = 0; i < iconImgName.count; i++) {
         ESPathIcon *pathIcon = [[ESPathIcon alloc] initWithNormalImageName:iconImgName[i] withSelectedImageName:iconSelectedImgNames[i]  withLabelTitle:iconTitles[i]];
         pathIcon.tag = i + 1;

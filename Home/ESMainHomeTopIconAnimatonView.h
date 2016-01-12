@@ -11,7 +11,7 @@
 @protocol ESMainHomeTopIconAnimatonViewDelegate <NSObject>
 
 @optional
-- (void)clickIconIndex:(int)index;
+- (void)clickIconIndex:(NSInteger)index;
 
 @end
 

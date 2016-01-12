@@ -53,8 +53,8 @@
 }
 
 #pragma mark - ESMainHomeTopIconAnimatonViewDelegate
-- (void)clickIconIndex:(int)index{
-    NSLog(@"选中%d",index);
+- (void)clickIconIndex:(NSInteger)index{
+    NSLog(@"选中%ld",(long)index);
 
     switch (index) {
         case 1:

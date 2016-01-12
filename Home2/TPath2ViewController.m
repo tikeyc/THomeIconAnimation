@@ -362,7 +362,7 @@
     
     
     ////////////////icon Animation
-    int count = _pathIcons.count;
+    NSInteger count = _pathIcons.count;
     double duration = 0.6;//0.6;
     for (int i = 0; i < _pathIcons.count; i++) {
         
