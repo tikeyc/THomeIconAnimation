@@ -1,2 +1,2 @@
 # THomeIconAnimation
-![image](https://github.com/tikeyc/THomeIconAnimation/raw/master/ReadMe/homeIconScreen.png)
+![image](https://github.com/tikeyc/THomeIconAnimation/raw/master/ReadMe/homeIconScreen1.png)
