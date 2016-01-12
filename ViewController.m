@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "TPath2ViewController.h"
+
 #import "ESMainHomeTopIconAnimatonView.h"
 
 @interface ViewController ()<ESMainHomeTopIconAnimatonViewDelegate>
@@ -71,6 +73,9 @@
         default:
             break;
     }
+    
+    TPath2ViewController *path2 = [[TPath2ViewController alloc] init];
+    [self.navigationController pushViewController:path2 animated:YES];
     
 }
 

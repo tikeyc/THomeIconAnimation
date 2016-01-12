@@ -10,6 +10,11 @@
 
 @interface THelper : NSObject
 
++ (UILabel *)labelWithFrame:(CGRect)frame
+                       text:(NSString *)text
+                  textColor:(UIColor *)color
+              textAlignment:(NSTextAlignment)alignment
+                       font:(UIFont *)font;
 
 + (UIButton *)buttonsetIamgeWithFrame:(CGRect)frame
                                 nfile:(NSString *)nfileName
