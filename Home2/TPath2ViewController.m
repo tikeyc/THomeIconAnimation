@@ -51,7 +51,8 @@
 @property (nonatomic,strong)NSMutableArray *pathIcons;
 @property (nonatomic,strong)ESPathIcon *lastSelectPathIcon;
 
-
+#define durationTime 0.9
+#define delayTime 0.3
 
 @end
 
@@ -363,7 +364,7 @@
     
     ////////////////icon Animation
     NSInteger count = _pathIcons.count;
-    double duration = 0.6;//0.6;
+    double duration = durationTime;
     for (int i = 0; i < _pathIcons.count; i++) {
         
         ESPathIcon *pathIcon = _pathIcons[i];
@@ -386,7 +387,7 @@
             pathIcon.animation = animationOpen;
         }
         
-        [self performSelector:@selector(performSelectorAnimation:) withObject:pathIcon afterDelay:duration*i*0.3];
+        [self performSelector:@selector(performSelectorAnimation:) withObject:pathIcon afterDelay:duration*i*delayTime];
         //        pathIcon.hidden = NO;
         //        [pathIcon.layer addAnimation:pathIcon.animation forKey:nil];
     }
