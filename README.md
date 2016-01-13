@@ -1,3 +1,3 @@
 # THomeIconAnimation
-![image](https://github.com/tikeyc/THomeIconAnimation/raw/master/ReadMe/homeIconScreen.gif)
+![image](https://github.com/tikeyc/THomeIconAnimation/raw/master/ReadMe/homeIconScreen1.gif)
 
