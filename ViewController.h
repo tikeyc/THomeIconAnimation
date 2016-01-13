@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)StartAnimation:(UIButton *)sender;
 
 @end
 

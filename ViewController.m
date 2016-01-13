@@ -79,4 +79,11 @@
     
 }
 
+
+#pragma mark - Actions Method
+
+- (IBAction)StartAnimation:(UIButton *)sender {
+    
+    [_homeTopIconAnimatonView startAnimation];
+}
 @end

@@ -16,7 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22V-Wr-o2O">
+                                <rect key="frame" x="117" y="444" width="87" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.71453095860000004" blue="0.50056929269999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dua-Kp-mgp"/>
+                                    <constraint firstAttribute="width" constant="87" id="b7J-PU-ZVa"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="StartAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjk-hB-O6W"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.66360259119999998" green="1" blue="0.83712007290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="22V-Wr-o2O" secondAttribute="bottom" constant="94" id="NdG-GV-NzX"/>
+                            <constraint firstItem="22V-Wr-o2O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fF1-a5-F3H"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y9P-D8-E3A"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
